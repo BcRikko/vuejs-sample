@@ -3,24 +3,29 @@
     <div class="task-list">
       <task v-for="n in 10"></task>
     </div>
+    <add-button><address>
   </main>
 </template>
 
 <script>
 import Task from './Task'
+import AddButton from './AddButton'
 
 export default {
   components: {
-    Task
+    Task,
+    AddButton
   }
 }
 </script>
 
 <style>
   main {
-    background-color: #f6f6f6;
     margin: 0 auto;
     width: 100%;
+    background-color: #f6f6f6;
+
+    height: 100%;
   }
 
   .task-list {
