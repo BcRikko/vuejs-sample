@@ -8,9 +8,9 @@
       DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription
     </p>
     <div class="task__controller">
-      <a href="#">Done</a>
-      <a href="#">Edit</a>
-      <a href="#">Delete</a>
+      <a href="#" @click="DONE_TASK">Done</a>
+      <a href="#" @click="EDIT_TASK">Edit</a>
+      <a href="#" @click="DELETE_TASK">Delete</a>
     </div>
   </div>
 </template>
@@ -67,3 +67,18 @@
   .task__controller > a:visited { color: #000080; }
   .task__controller > a:hover { color: #35495E; }
 </style>
+
+<script>
+  import { mapActions } from 'vuex'
+  import { DONE_TASK, EDIT_TASK, DELETE_TASK } from '../vuex/mutation-types'
+
+  export default {
+    methods: {
+      ...mapActions({
+        DONE_TASK,
+        EDIT_TASK,
+        DELETE_TASK
+      })
+    }
+  }
+</script>

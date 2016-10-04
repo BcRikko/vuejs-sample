@@ -1,5 +1,7 @@
 <template>
-  <p class="btn-floating btn-add">+</p>
+  <div>
+    <div class="btn-floating btn-add">+</div>
+  </div>
 </template>
 
 <style>
@@ -25,5 +27,7 @@
   .btn-add {
     background-color: #db4437;
   }
+  .btn-add:hover {
+    background-color: #b31b0e;
+  }
 </style>
-

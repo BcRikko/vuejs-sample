@@ -3,7 +3,7 @@
     <div class="task-list">
       <task v-for="n in 10"></task>
     </div>
-    <add-button><address>
+    <add-button></add-button>
   </main>
 </template>
 
