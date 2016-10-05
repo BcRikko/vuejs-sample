@@ -70,7 +70,7 @@
 
 <script>
   import { mapActions } from 'vuex'
-  import { DONE_TASK, EDIT_TASK, DELETE_TASK } from '../vuex/mutation-types'
+  import { DONE_TASK, EDIT_TASK, DELETE_TASK } from '../store/mutation-types'
 
   export default {
     methods: {

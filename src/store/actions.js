@@ -19,5 +19,14 @@ export default {
   [types.DONE_TASK] ({ commit }, task) {
     console.log('actions', types.DONE_TASK, commit, task)
     commit(types.DONE_TASK, task)
+  },
+
+  [types.OPEN_MODAL] ({ commit }, task) {
+    console.log('actions', types.OPEN_MODAL, commit, task)
+    commit(types.OPEN_MODAL, task)
+  },
+  [types.CLOSE_MODAL] ({ commit }, task) {
+    console.log('actions', types.CLOSE_MODAL, commit, task)
+    commit(types.CLOSE_MODAL, task)
   }
 }

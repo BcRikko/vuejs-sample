@@ -13,7 +13,7 @@ header {
 }
 
 header span {
-  font-size: 35px;
+  font-size: 2em;
   padding-left: 35px;
   line-height: 100px;
 }

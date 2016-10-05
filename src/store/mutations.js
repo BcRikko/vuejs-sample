@@ -3,7 +3,10 @@ import * as types from './mutation-types'
 export const STORAGE_KEY = 'todos-vuejs'
 
 export const state = {
-  tasks: JSON.parse(window.localStorage.getItem(STORAGE_KEY) || '[]')
+  tasks: JSON.parse(window.localStorage.getItem(STORAGE_KEY) || '[]'),
+  modal: {
+    isShown: false
+  }
 }
 
 export const mutations = {
@@ -25,5 +28,12 @@ export const mutations = {
   [types.DONE_TASK] (state, task) {
     console.log('mutation', types.DONE_TASK, state, task)
     task.done = true
+  },
+
+  [types.OPEN_MODAL] (state) {
+    state.modal.isShown = true
+  },
+  [types.CLOSE_MODAL] (state) {
+    state.modal.isShown = false
   }
 }

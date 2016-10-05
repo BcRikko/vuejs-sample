@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <div class="btn-floating btn-add">+</div>
-  </div>
+  <div @click="OPEN_MODAL" class="btn-floating btn-add">+</div>
 </template>
 
 <style>
@@ -31,3 +29,16 @@
     background-color: #b31b0e;
   }
 </style>
+
+<script>
+  import { mapActions } from 'vuex'
+  import { OPEN_MODAL } from '../store/mutation-types'
+
+  export default {
+    methods: {
+      ...mapActions({
+        OPEN_MODAL
+      })
+    }
+  }
+</script>
